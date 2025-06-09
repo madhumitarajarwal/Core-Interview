@@ -5,14 +5,18 @@ public class TestLogin {
 		String currectUN = "madhu";
 		String currectP = "1122";
 
-		if (!currectUN.equals(userName)) {
-			throw new LoginExceptionn("invalid User");
-		}
-		if (!currectP.equals(pass)) {
-			throw new LoginExceptionn("invalid Pass");
-		}
-	}
+//		if (!currectUN.equals(userName)) {
+//			throw new LoginExceptionn("invalid User");
+//		}
+//		if (!currectP.equals(pass)) {
+//			throw new LoginExceptionn("invalid Pass");
+//		}
+//	}
 
+		if(!currectUN.equals(userName)&&(!currectP.equals(pass))){
+			throw new LoginExceptionn("invalid Pass & login");
+			}
+		}
 	public static void main(String[] args) {
 		TestLogin l = new TestLogin();
 		try {

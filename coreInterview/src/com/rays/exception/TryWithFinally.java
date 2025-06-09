@@ -6,9 +6,9 @@ public class TryWithFinally {
 
 		String s = "madhu";
 		try {
-			s.charAt(10);
+			s.charAt(11);
 			System.out.println("try");
-			//System.exit(0);
+			System.exit(0);
 		} finally {
 			System.out.println("end of program");
 		}

@@ -9,12 +9,12 @@ public class TryWithMultiCatchFInally {
 			System.out.println(s.length());
 			System.out.println(s.charAt(5));
 			
-		} catch (NullPointerException e) {
-			System.out.println(e);
-			
-		} catch (StringIndexOutOfBoundsException e) {
+		}  catch (StringIndexOutOfBoundsException e) {
 			System.out.println(e);
 			System.exit(0);
+		}catch (NullPointerException e) {
+			System.out.println(e);
+			
 		} finally {
 			System.out.println("Finally block");
 		}
