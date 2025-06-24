@@ -14,7 +14,9 @@ public class MapInterface {
 		m.put(3, "c");
 		m.put(4, "d");
 		m.put(5, "e");
-
+		m.put(1.1, "f");
+         
+		System.out.println(m);
 		System.out.println(m.size());
 		System.out.println(m.isEmpty());
 		System.out.println(m.get(5));
@@ -24,10 +26,10 @@ public class MapInterface {
 
 		TreeMap t = new TreeMap();
 
-		t.put(1, "kpail");
-		t.put(2, "raj");
-		t.put(3, "prs");
-		t.put(4, "dp");
+		t.put(1, "a");
+		t.put(2, "b");
+		t.put(3, "c");
+		t.put(4, "d");
 		t.put(5, "e");
 
 		System.out.println(t.firstKey());
@@ -41,8 +43,8 @@ public class MapInterface {
 		l.put(1, "kgn");
 		l.put(2, "jtn");
 		l.put(3, "indore");
-		t.put(2, "kpail");
-		t.put(5, "raj");
+		t.put(2, "a");
+		t.put(5, "b");
 
 		System.out.println(l.get(2));
 		System.out.println(l.containsKey(3));

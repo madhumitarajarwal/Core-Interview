@@ -4,10 +4,12 @@ public class Student implements Comparable<Student> {
 
 	private int id;
 	private String name;
+	private int salary;
 
-	public Student(int id, String name) {
+	public Student(int id, String name,int salary) {
 		this.id = id;
 		this.name = name;
+		this.salary=salary;
 	}
 
 	@Override
@@ -15,18 +17,20 @@ public class Student implements Comparable<Student> {
 
 		if (this.name.equals(o.name)) {
 
-			return this.id - o.id;
+		//	return this.id - o.id;  // agar name same hai toh ID compare karo
+			
+			return o.salary - this.salary;
 
 		} else {
 
-			return this.name.compareTo(o.name); 
+			return this.name.compareTo(o.name); //// warna name ka alphabetical (lexical) comparison
 
 		}
 	}
 
 	@Override
 	public String toString() {
-		return id + " " + name;
+		return id + " " + name+ " "+salary;
 	}
 
 }

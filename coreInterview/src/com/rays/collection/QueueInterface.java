@@ -14,7 +14,7 @@ public class QueueInterface {
 		queue.offer(100);
 		queue.offer(200);
 		queue.offer(30); 
-		queue.offer(400);   //queue.offer(400);  both are working same
+		queue.offer(400);   //queue.add(400);  both are working same
 
 		System.out.println("queue.element() : " + queue.element());
 		System.out.println("queue.peek() : " + queue.peek());

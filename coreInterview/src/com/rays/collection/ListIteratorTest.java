@@ -9,8 +9,8 @@ public class ListIteratorTest {
         List l = new ArrayList();
         l.add(10);
         l.add(12);
-        l.add("raj");
-        l.add("Kapil");
+        l.add("abc");
+        l.add("xyz");
 
         ListIterator it = l.listIterator();
         while (it.hasNext()) {

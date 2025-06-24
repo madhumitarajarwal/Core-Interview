@@ -1,9 +1,9 @@
- package com.rays.collection;
+package com.rays.collection;
 
 public class EqualHashCode {
-	int id;
-	String name;
-	int salary;
+	private int id;
+	private String name;
+	private int salary;
 
 	public EqualHashCode(int id, String name, int salary) {
 		this.id = id;
@@ -12,9 +12,11 @@ public class EqualHashCode {
 	}
 
 	// hashcode will not apply in primitive data type
+
 	@Override
 	public int hashCode() {
 		String s = this.id + this.name + this.salary;
+		System.out.println("in hashcode method: " + s.hashCode());
 		return s.hashCode();
 	}
 
@@ -31,12 +33,16 @@ public class EqualHashCode {
 		String st = this.id + this.name + this.salary;
 		String st1 = e.id + e.name + e.salary;
 
+		System.out.println("in equals method: " + st.equals(st1));
+
 		return st.equals(st1);
 	}
 
 	@Override
 	public String toString() {
+
 		String s = this.id + " " + this.name + " " + this.salary;
+
 		return s;
 	}
 }

@@ -12,7 +12,7 @@ public class EmployeeTestComparater {
 	public static void main(String[] args) {
 		List l = new ArrayList();
 
-		l.add(new Employee("kapil", 3, 2000));
+		l.add(new Employee("mona", 3, 2000));
 		l.add(new Employee("a", 1, 1000));
 		l.add(new Employee("b", 2, 3000));
 		l.add(new Employee("c", 1, 5000));
@@ -22,9 +22,11 @@ public class EmployeeTestComparater {
 
 		Collections.sort(l, byName);
 
-		System.out.println("ShortByName>>>");
-
-		Iterator it = l.iterator();
+		System.out.println("ShortByName>>>"); //1 a 1000
+		                                       //5 a 2000
+		Iterator it = l.iterator();            //2 b 3000
+		                                       //1 c 5000
+	                                        	//3 mona 2000
 		while (it.hasNext()) {
 			System.out.println(it.next());
 		}

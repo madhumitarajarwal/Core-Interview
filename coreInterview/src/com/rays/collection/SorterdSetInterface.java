@@ -16,7 +16,7 @@ public class SorterdSetInterface {
         s.add(400);  // Adds 400 to the set
         s.add(500);  // Adds 500 to the set
         s.add(100);
-        //s.add("kapil");
+        //s.add("madhu");
         
         // Print the first (smallest) element in the set
         System.out.println(s.first()); // Output: 20
@@ -26,7 +26,8 @@ public class SorterdSetInterface {
         
         // Print the size of the set
         System.out.println(s.size());  // Output: 5
-        
+          
+       
         // Print a view of the set from 200 (inclusive) to the end
         System.out.println(s.tailSet(200)); // Output: [300, 400, 500]
         

@@ -28,7 +28,7 @@ public class SetInterface {
 		t.add(40);
 
 		System.out.println(t.contains(10));
-		System.out.println(t.ceiling(10));
+		System.out.println(t.ceiling(10));  //"Woh sabse chhota element jo given value se barabar ya bada ho."
 		System.out.println(t.first());
 		System.out.println(t.pollFirst());
 		System.out.println(t);

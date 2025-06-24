@@ -17,8 +17,8 @@ public class FailFast {
 		l.add(5);
 //		l.add("abc");
 
-//        l.add(4);    // Here we cannot add or remove elements when list object
-//        l.clear();   // Here we clear
+     l.add(4);    // Here we cannot add or remove elements when list object
+     //   l.clear();   // Here we clear
 
 		while (it.hasNext()) {
 			System.out.println(it.next());

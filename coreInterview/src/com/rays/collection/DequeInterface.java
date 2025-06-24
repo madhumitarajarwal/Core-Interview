@@ -18,8 +18,8 @@ public class DequeInterface{
 		dequ.offer(500);
 		dequ.offer(600);
 		
-	//	System.out.println("dequ.offerFirst(1000) : "+dequ.offerFirst(1000));
-		//System.out.println(dequ);
+	//System.out.println("dequ.offerFirst(1000) : "+dequ.offerFirst(1000));
+	//	System.out.println(dequ);
 		System.out.println("dequ.getFirst() : "+dequ.getFirst());
 		System.out.println("dequ.peek() : "+dequ.peek());
 		System.out.println(dequ);

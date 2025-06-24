@@ -11,10 +11,11 @@ public class TestStdComparable {
 
 		List list = new ArrayList();
 
-		list.add(new Student(4, "kapil"));
-		list.add(new Student(2, "c"));
-		list.add(new Student(3, "e"));
-		list.add(new Student(1, "d"));
+		
+		list.add(new Student(2, "c" ,1000));
+		list.add(new Student(3, "c" ,500));
+		list.add(new Student(1, "c" ,200));
+		list.add(new Student(4, "c" ,10));
 
 		Collections.sort(list);
 
