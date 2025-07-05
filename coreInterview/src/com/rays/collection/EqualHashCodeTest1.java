@@ -21,8 +21,9 @@ public class EqualHashCodeTest1 {
 		System.out.println("----------------using hashmap--------- ");
 		Map m = new HashMap();
 
-		m.put(e1, 100);
-		m.put(e2, 200);
+		m.put(e1,100);
+		m.put(e2,200);
+		
 		
 		System.out.println(m);
 		

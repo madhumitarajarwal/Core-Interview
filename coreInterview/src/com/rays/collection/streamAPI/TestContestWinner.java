@@ -11,16 +11,15 @@ public class TestContestWinner {
 
 		List<ContestWinner> l = new ArrayList<ContestWinner>();
 		l.add(new ContestWinner("okk", "8966012549"));
-		l.add(new ContestWinner("notOkk", "124946655"));
-		l.add(new ContestWinner("okok", "124965498"));
-		l.add(new ContestWinner("IamOk", "65154488485"));
+		l.add(new ContestWinner("okok", "65154488485"));
+		l.add(new ContestWinner("okok", "65154488485"));
+		l.add(new ContestWinner("okok", "65154488485"));
 
-		l.stream().map(e -> (e.getName() + " " + e.getPhoneNo()))
-		.distinct()
-		.collect(Collectors.collectingAndThen(Collectors.toList(), c -> {
-		 Collections.shuffle(c);
-		 return c.stream();}))
-		.limit(2).forEach(c -> System.out.println(c));
+		l.stream().map(e -> (e.getName()+ " " +e.getPhoneNo())).distinct()
+				.collect(Collectors.collectingAndThen(Collectors.toList(), c -> {
+					Collections.shuffle(c);
+					return c.stream();
+				})).limit(2).forEach(c -> System.out.println(c));
 
 	}
 
