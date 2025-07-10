@@ -14,11 +14,9 @@ public class StreamHigSalary {
 		list.add(4000);
 		list.add(3000);
 
-		System.out.println("first highest");
-		list.stream().distinct().sorted(Collections.reverseOrder()).findFirst().ifPresent(e -> System.out.println(e));
-
 		System.out.println("second highest");
-		list.stream().distinct().sorted(Collections.reverseOrder()).skip(1).findFirst().ifPresent(System.out::println);
+		list.stream().distinct().sorted(Collections.reverseOrder()).skip(1).findFirst()
+				.ifPresent(e -> System.out.println(e));
 
 	}
 
