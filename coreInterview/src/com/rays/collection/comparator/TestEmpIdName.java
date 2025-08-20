@@ -12,7 +12,7 @@ public class TestEmpIdName {
 		l.add(new Employee("d", 3, 2000));
 		l.add(new Employee("c", 1, 1000));
 		l.add(new Employee("b", 2, 3000));
-		l.add(new Employee("kapil", 1, 5000));
+		l.add(new Employee("l", 1, 5000));
 		l.add(new Employee("a", 5, 2000));
 
 		EmployeeShortByIdName e = new EmployeeShortByIdName();
