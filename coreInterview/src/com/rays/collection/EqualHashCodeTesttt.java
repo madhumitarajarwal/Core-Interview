@@ -5,10 +5,10 @@ import java.util.Set;
 
 public class EqualHashCodeTesttt {
 	public static void main(String[] args) {
-		EqualHashCode e1 = new EqualHashCode(1, "kapil", 120);
-		EqualHashCode e2 = new EqualHashCode(1, "kapil", 120);
-		EqualHashCode e3 = new EqualHashCode(1, "kapil", 120);
-		EqualHashCode e4 = new EqualHashCode(10, "kapil", 120);
+		EqualHashCode e1 = new EqualHashCode(1, "a", 120);
+		EqualHashCode e2 = new EqualHashCode(1, "a", 120);
+		EqualHashCode e3 = new EqualHashCode(1, "a", 120);
+		EqualHashCode e4 = new EqualHashCode(10, "a", 120);
 
 		Set s = new HashSet();
 		s.add(e1);
